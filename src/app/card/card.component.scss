@@ -74,16 +74,20 @@
   animation: animatedCard 1s ease-in-out;
 }
 
-.next {
+.spring {
   animation: animatedCard 1.25s ease-in-out;
 }
 
-.vue {
+.next {
   animation: animatedCard 1.5s ease-in-out;
 }
 
-.laravel {
+.vue {
   animation: animatedCard 1.75s ease-in-out;
+}
+
+.laravel {
+  animation: animatedCard 2s ease-in-out;
 }
 
 @keyframes animatedCard {

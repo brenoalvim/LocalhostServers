@@ -1,0 +1,93 @@
+.container-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 100%;
+
+  ol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 175px;
+      height: 175px;
+      background-color: #f2f2f2;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      transition: 0.5s all;
+      animation: animatedCard 2s ease-in-out;
+
+      &:hover {
+        margin-bottom: 40px;
+      }
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: #000;
+        font-size: 1.5rem;
+        font-weight: 700;
+        transition: all 0.3s ease-in-out;
+
+        .image {
+          width: 100%;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+
+          img {
+            width: 100px;
+            height: 100px;
+            margin-top: 5px;
+          }
+        }
+
+        .span {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@keyframes animatedCard {
+    0%,100% {
+      transform: rotate(0deg);transform-origin: 50% 50%;
+    }
+    10% {
+      transform: rotate(8deg);
+    }
+    20%,40%,60% {
+      transform: rotate(-10deg);
+    }
+    30%,50%,70% {
+      transform: rotate(10deg);
+    }
+    80% {
+      transform: rotate(-8deg);
+    }
+    90% {
+      transform: rotate(8deg);
+    }
+    
+  }

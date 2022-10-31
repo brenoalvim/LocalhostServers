@@ -27,7 +27,7 @@
       border-radius: 15px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
       transition: 0.5s all;
-      animation: animatedCard 2s ease-in-out;
+      //   animation: animatedCard 2s ease-in-out;
 
       &:hover {
         margin-bottom: 40px;
@@ -70,24 +70,29 @@
   }
 }
 
+.angular {
+  animation: animatedCard 1s ease-in-out;
+}
+
+.next {
+  animation: animatedCard 1.25s ease-in-out;
+}
+
+.vue {
+  animation: animatedCard 1.5s ease-in-out;
+}
+
+.laravel {
+  animation: animatedCard 1.75s ease-in-out;
+}
+
 @keyframes animatedCard {
-    0%,100% {
-      transform: rotate(0deg);transform-origin: 50% 50%;
-    }
-    10% {
-      transform: rotate(8deg);
-    }
-    20%,40%,60% {
-      transform: rotate(-10deg);
-    }
-    30%,50%,70% {
-      transform: rotate(10deg);
-    }
-    80% {
-      transform: rotate(-8deg);
-    }
-    90% {
-      transform: rotate(8deg);
-    }
-    
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
   }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

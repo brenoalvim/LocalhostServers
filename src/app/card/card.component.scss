@@ -82,12 +82,22 @@
   animation: animatedCard 1.5s ease-in-out;
 }
 
-.vue {
+.react {
   animation: animatedCard 1.75s ease-in-out;
 }
 
 .laravel {
   animation: animatedCard 2s ease-in-out;
+}
+
+.grails {
+  animation: animatedCard 2.25s ease-in-out;
+}
+
+.react-img {
+  width: 200px;
+  height: 200px;
+  animation: rotate infinite 20s linear;
 }
 
 @keyframes animatedCard {
@@ -98,5 +108,14 @@
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
